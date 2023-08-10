@@ -5,7 +5,7 @@ function Card({name,price,img}) {
   return (
     <div className='card bg-near-white tc dib br-4 ma2 shadow-4 grow'>
       <img className='img' src={img}/>
-      <h1 className='blue'>{name}</h1>
+      <h1 className='blue mt4 mb-2'>{name}</h1>
       <h3 className='gold'>{price}</h3>
 
     </div>
