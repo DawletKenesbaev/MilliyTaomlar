@@ -12,9 +12,11 @@ function App() {
     return item.name.toLowerCase().includes(searchField.toLowerCase())
    })
   return (
-    <div className='tc'>
-      <h1 className='mt2 mb4  blue'>Milliy Taomlar</h1>
-      <SearchBox searchChange={onSearchChange} />
+    <div className='tc mauto'>
+      <div className='parentBox '>
+        <h1 className='mt2 mb4  blue'>Milliy Taomlar</h1>
+        <SearchBox searchChange={onSearchChange} />
+      </div>
       <CardList taomlar={Filtered} />
     </div>
   )

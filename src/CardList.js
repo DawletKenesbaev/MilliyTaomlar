@@ -22,7 +22,7 @@ import Card from './Card'
 
 function CardList({taomlar}) {
   return (
-    <div className='pa4 cards'>
+    <div className='pa4 cards mauto flex justify-center'>
       {taomlar.map((item, index) => (
         <Card key={index} name={item.name} price={item.price} img={item.url}/>
       ))}
